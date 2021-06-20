@@ -5,6 +5,7 @@ Sample url-shortener rest api service.
 - [Java](https://www.java.com) ( version 1.11 )
 - [Spring Boot](https://spring.io/projects/spring-boot) ( version 2.4.2 )
 - [h2 database](https://www.h2database.com) (version 1.4.2)    
+- [Swagger 3](https://swagger.io/specification/) (version 3.0.0)
 
 ## Requirements 
 Apache Maven (version: 3.6.3)<br/>
