@@ -37,7 +37,7 @@ you can access the H2 database:
 
 ## Deploy on Docker and RUN
 To run by deploying on Docker, 
-navigate to /target directory and run:
+navigate to project root (url-shortener) directory and run:
 ```shell script
 docker build -f Dockerfile -t url-shortener:0.1 .
 docker container run -p 9001:9001 -d url-shortener:0.1
