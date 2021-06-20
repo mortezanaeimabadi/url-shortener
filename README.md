@@ -20,31 +20,37 @@ cd url-shortener
 mvn clean package
 ```
 
-## Deployment and RUN
+## Deploy locally and RUN
 To run without deploying on Docker:
+
 navigate to /target directory and run:
 ```shell script 
 java -jar url-shortener.jar
 ```
+### Database
+If run without deploying on docker, 
+you can access the H2 database:
+ http://localhost:9001/h2-console
 
-To run by deploying on Docker run:
+- Username: sa
+- Password: pass
+
+## Deploy on Docker and RUN
+To run by deploying on Docker, 
+navigate to /target directory and run:
 ```shell script
 docker build -f Dockerfile -t url-shortener:0.1 .
 docker container run -p 9001:9001 -d url-shortener:0.1
 ```
-Then 
 
+## Test endpoints (SWAGGER)
+Then 
 In order to view the endpoints visit: 
 http://localhost:9001/swagger-ui/
 
 
 
-## Database
-The h2 database is used and its db file is located at ./data/db<br/>
-H2 console is available in http://localhost:9001/h2-console
 
-- Username: sa
-- Password: pass
 
 
 
